@@ -28,7 +28,7 @@ chunkc core::log_level warn
 # NOTE: specify the absolutepath to the directory to use when loading a plugin.
 #
 
-chunkc core::plugin_dir ~/dev/src-oss/chunkwm/plugins
+chunkc core::plugin_dir /opt/local/lib/chunkwm/plugins
 
 #
 # NOTE: if enabled, chunkwm will monitor the specified plugin_dir
@@ -60,6 +60,7 @@ chunkc set global_desktop_offset_gap     0
 #
 
 chunkc set 1_desktop_mode                float
+chunkc set 2_desktop_mode                float
 chunkc set 7_desktop_mode                monocle
 chunkc set 8_desktop_mode                monocle
 
@@ -126,7 +127,7 @@ chunkc set ffm_standby_on_float          1
 
 chunkc core::load border.so
 chunkc core::load tiling.so
-chunkc core::load ffm.so
+#chunkc core::load ffm.so
 
 #
 # NOTE: sample rules for the tiling plugin
